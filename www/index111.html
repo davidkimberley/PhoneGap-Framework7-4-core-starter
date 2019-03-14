@@ -1,27 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- Required meta tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <!-- Color theme for statusbar -->
-    <meta name="theme-color" content="#2196f3">
-    <!-- Your app title -->
-    <title>SA4x4 Magazine</title>
-    <!-- Path to Framework7 Library Bundle CSS -->
-    <link rel="stylesheet" href="lib/framework7/css/framework7.bundle.min.css">
-    <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <!-- App root element -->
-    <div id="app">
-      <!-- Statusbar overlay -->
-      <div class="statusbar"></div>
-	  
-	  <div class="panel panel-left panel-cover">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Framework7</title>
+  <link rel="stylesheet" href="lib/framework7/css/framework7.bundle.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">
+</head>
+<body>
+  <div id="app">
+    <div class="statusbar"></div>
+    <div class="panel panel-left panel-cover">
       
         <div class="page-content">
           <div class="block-title">Left Panel</div>
@@ -90,14 +85,9 @@
         </div>
       </div>
     </div>
-
-      <!-- Your main view, should have "view-main" class -->
-      <div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/">
-        <!-- Initial Page, "data-name" contains page name -->
-        <div data-name="home" class="page">
-
-          <!-- Top Navbar -->
-          <div class="navbar">
+    <div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/">
+      <div data-page="home" class="page">
+        <div class="navbar">
           <div class="navbar-inner">
             <div class="left">
               <a href="#" class="link icon-only panel-open" data-panel="left">
@@ -105,7 +95,7 @@
                 <i class="icon material-icons md-only">menu</i>
               </a>
             </div>
-            <div class="title sliding">SA4x4 Magazine</div>
+            <div class="title sliding">Framework7</div>
             <div class="right">
               <a class="link icon-only searchbar-enable" data-searchbar=".searchbar-components">
                 <i class="icon f7-icons ios-only">search</i>
@@ -113,7 +103,7 @@
               </a>
             </div>
             <div class="title-large">
-              <div class="title-large-text">SA4x4</div>
+              <div class="title-large-text">Framework7</div>
             </div>
             <form data-search-container=".components-list" data-search-in="a" class="searchbar searchbar-expandable searchbar-components searchbar-init">
               <div class="searchbar-inner">
@@ -127,18 +117,7 @@
             </form>
           </div>
         </div>
-
-          <!-- Bottom Toolbar -->
-          <div class="toolbar toolbar-bottom">
-            <div class="toolbar-inner">
-              <!-- Toolbar links -->
-              <a href="#" class="link">Link 1</a>
-              <a href="#" class="link">Link 2</a>
-            </div>
-          </div>
-
-          <!-- Scrollable page content -->
-          <div class="page-content">
+        <div class="page-content">
           <div class="list searchbar-hide-on-search">
             <ul>
               <li>
@@ -673,13 +652,11 @@
             </ul>
           </div>
         </div>
-        </div>
       </div>
     </div>
-    <!-- Path to Framework7 Library Bundle JS-->
-	<script src="lib/framework7/js/framework7.bundle.min.js"></script>
-	<script src="js/routes.js"></script>
-    <!-- Path to your app js-->
-    <script type="text/javascript" src="js/app.js"></script>
-  </body>
+  </div>
+  <script src="lib/framework7/js/framework7.bundle.min.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+</body>
 </html>
